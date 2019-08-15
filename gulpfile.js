@@ -3,7 +3,7 @@ const gulp = require("gulp"),
 
 gulp.task("sprite", function() {
   return gulp
-    .src("src/images/icons/*.svg")
+    .src("src/icons/*.svg")
     .pipe(svgSprite(config))
     .pipe(gulp.dest("."));
 });
